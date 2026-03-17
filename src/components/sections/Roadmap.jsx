@@ -30,8 +30,8 @@ export default function Roadmap() {
             <div className="label-pill">ROADMAP</div>
           </div>
           <h2 className="reveal" style={{
-            fontFamily: 'Kanit, sans-serif', fontWeight: 800,
-            fontSize: 'clamp(28px, 4vw, 48px)', color: '#fff', letterSpacing: '0.8px'
+            fontFamily: 'Syne, sans-serif', fontWeight: 800,
+            fontSize: 'clamp(28px, 4vw, 48px)', color: '#fff'
           }}>
             Where We're Going.
           </h2>
@@ -40,13 +40,13 @@ export default function Roadmap() {
         {/* Timeline */}
         <div style={{ position: 'relative', maxWidth: '900px', margin: '0 auto' }}>
           {/* Connecting line */}
-          <div style={{
+          <div className="roadmap-line" style={{
             position: 'absolute', top: '32px', left: '15%', right: '15%',
             height: '2px',
             background: 'linear-gradient(90deg, #00C8FF, rgba(0,87,255,0.4))',
           }} />
 
-          <div style={{
+          <div className="roadmap-grid" style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(4, 1fr)',
             gap: '20px',
@@ -64,7 +64,7 @@ export default function Roadmap() {
                   position: 'relative', zIndex: 1,
                 }}>
                   <span style={{
-                    fontFamily: 'Kanit, sans-serif', fontSize: '10px',
+                    fontFamily: 'Syne, sans-serif', fontSize: '10px',
                     fontWeight: 700, color: p.color, letterSpacing: '1px'
                   }}>
                     {p.time}
@@ -79,7 +79,7 @@ export default function Roadmap() {
                   {p.phase}
                 </div>
                 <div style={{
-                  fontFamily: 'Kanit, sans-serif', fontSize: '14px',
+                  fontFamily: 'Syne, sans-serif', fontSize: '14px',
                   fontWeight: 700, color: '#fff', marginBottom: '8px'
                 }}>
                   {p.label}

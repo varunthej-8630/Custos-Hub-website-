@@ -49,16 +49,16 @@ export default function Founder() {
             <div className="label-pill">THE FOUNDER</div>
           </div>
           <h2 className="reveal" style={{
-            fontFamily: 'Kanit, sans-serif', fontWeight: 800,
-            fontSize: 'clamp(28px, 4vw, 48px)', color: '#fff', letterSpacing: '0.8px'
+            fontFamily: 'Syne, sans-serif', fontWeight: 800,
+            fontSize: 'clamp(28px, 4vw, 48px)', color: '#fff'
           }}>
             Why Custos Exists.
           </h2>
         </div>
 
-        <div style={{
+        <div className="founder-grid" style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
           gap: '40px', alignItems: 'start'
         }}>
           {/* Left: Founder card */}
@@ -75,7 +75,7 @@ export default function Founder() {
                 👨‍💻
               </div>
               <h3 style={{
-                fontFamily: 'Kanit, sans-serif', fontSize: '24px', fontWeight: 800,
+                fontFamily: 'Syne, sans-serif', fontSize: '24px', fontWeight: 800,
                 color: '#fff', marginBottom: '4px'
               }}>
                 Parimi Varun Thej
@@ -129,7 +129,7 @@ export default function Founder() {
                 </p>
               ))}
               <p style={{
-                fontFamily: 'Kanit, sans-serif', fontSize: '14px',
+                fontFamily: 'Syne, sans-serif', fontSize: '14px',
                 color: 'rgba(0,200,255,0.8)', fontWeight: 600,
                 marginTop: '16px'
               }}>

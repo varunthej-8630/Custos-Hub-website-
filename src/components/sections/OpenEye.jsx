@@ -112,9 +112,9 @@ export default function OpenEye() {
             </div>
           </div>
           <h2 className="reveal" style={{
-            fontFamily: 'Kanit, sans-serif', fontWeight: 800,
+            fontFamily: 'Syne, sans-serif', fontWeight: 800,
             fontSize: 'clamp(36px, 6vw, 72px)', color: '#fff',
-            marginBottom: '20px', lineHeight: 1.05, letterSpacing: '0.8px'
+            marginBottom: '20px', lineHeight: 1.05
           }}>
             Open Eye Network.
           </h2>
@@ -130,7 +130,7 @@ export default function OpenEye() {
         </div>
 
         {/* 3D Globe */}
-        <div className="reveal" style={{
+        <div className="reveal openeye-globe" style={{
           height: '420px', maxWidth: '700px', margin: '0 auto 56px',
           position: 'relative'
         }}>
@@ -161,7 +161,7 @@ export default function OpenEye() {
             <div key={i} className="glass-card reveal" style={{ padding: '28px', textAlign: 'center' }}>
               <div style={{ fontSize: '32px', marginBottom: '12px' }}>{app.icon}</div>
               <h3 style={{
-                fontFamily: 'Kanit, sans-serif', fontSize: '17px', fontWeight: 700,
+                fontFamily: 'Syne, sans-serif', fontSize: '17px', fontWeight: 700,
                 color: '#fff', marginBottom: '8px'
               }}>{app.title}</h3>
               <p style={{

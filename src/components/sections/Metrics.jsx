@@ -12,7 +12,7 @@ export default function Metrics() {
       background: 'rgba(255,255,255,0.02)',
       backdropFilter: 'blur(12px)',
     }}>
-      <div style={{
+      <div className="metrics-grid" style={{
         maxWidth: '1200px', margin: '0 auto',
         display: 'grid',
         gridTemplateColumns: 'repeat(3, 1fr)',
@@ -23,7 +23,7 @@ export default function Metrics() {
             borderRight: i < metrics.length - 1 ? '1px solid rgba(255,255,255,0.06)' : 'none',
           }}>
             <div className="gradient-text" style={{
-              fontFamily: 'Kanit, sans-serif', fontWeight: 800,
+              fontFamily: 'Syne, sans-serif', fontWeight: 800,
               fontSize: 'clamp(36px, 5vw, 60px)',
               marginBottom: '8px', display: 'block'
             }}>

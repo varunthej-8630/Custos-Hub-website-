@@ -18,9 +18,9 @@ export default function ElderCare() {
   return (
     <section className="section-wrapper" style={{ padding: '120px 0' }}>
       <div className="section">
-        <div style={{
+        <div className="eldercare-grid" style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
           gap: '24px'
         }}>
           {/* Elder Care */}
@@ -37,7 +37,7 @@ export default function ElderCare() {
               ELDER CARE MODE
             </div>
             <h3 style={{
-              fontFamily: 'Kanit, sans-serif', fontSize: '26px', fontWeight: 700,
+              fontFamily: 'Syne, sans-serif', fontSize: '26px', fontWeight: 700,
               color: '#fff', marginBottom: '24px'
             }}>
               Peace of mind<br />for families.
@@ -71,7 +71,7 @@ export default function ElderCare() {
               BUSINESS INTELLIGENCE
             </div>
             <h3 style={{
-              fontFamily: 'Kanit, sans-serif', fontSize: '26px', fontWeight: 700,
+              fontFamily: 'Syne, sans-serif', fontSize: '26px', fontWeight: 700,
               color: '#fff', marginBottom: '24px'
             }}>
               Your cameras become<br />data engines.

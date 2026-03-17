@@ -2,21 +2,21 @@ import { useState } from 'react'
 
 const nodes = {
   sensors: [
-    { label: 'Vision Monitoring', specs: ['Fall Detection', 'Activity Recognition', 'Intrusion Alerts'], color: '#00C8FF' },
-    { label: 'Movement Detection', specs: ['24/7 Tracking', 'Behavioral Patterns', 'Anomaly Detection'], color: '#00C8FF' },
-    { label: 'Audio Intelligence', specs: ['Distress Recognition', 'Emergency Words', 'Safety Sounds'], color: '#00C8FF' },
-    { label: 'Safety Sensors', specs: ['Entry Detection', 'Safety Events', 'Status Monitoring'], color: '#00C8FF' },
+    { label: 'Smart Camera Modules', specs: ['4K AI Camera', 'Night Vision', 'Wide-angle lens'], color: '#00C8FF' },
+    { label: 'Motion Sensors', specs: ['PIR + Radar', '360° coverage', 'Low power'], color: '#00C8FF' },
+    { label: 'Audio Nodes', specs: ['Distress detection', 'Glass-break sensor', 'Mesh audio'], color: '#00C8FF' },
+    { label: 'Door Sensors', specs: ['Magnetic contacts', 'Force detection', 'Tamper alert'], color: '#00C8FF' },
   ],
-  hub: { label: 'AI Intelligence Engine', sublabel: 'Adaptive Learning Core', color: '#0057FF' },
+  hub: { label: 'Central AI Hub', sublabel: 'Jetson Orin Nano + FPGA', color: '#0057FF' },
   output: [
-    { label: 'Caregiver Dashboard', specs: ['iOS + Android', 'Real-time Alerts', 'Remote Oversight'], color: '#00C8FF' },
-    { label: 'Cloud Integration', specs: ['Optional Backup', 'Your Choice', 'GDPR Compliant'], color: 'rgba(255,255,255,0.4)' },
+    { label: 'Mobile Command App', specs: ['iOS + Android', 'Real-time alerts', 'Remote control'], color: '#00C8FF' },
+    { label: 'Cloud Sync (optional)', specs: ['Encrypted backup', 'Optional only', 'GDPR compliant'], color: 'rgba(255,255,255,0.4)' },
   ]
 }
 
 const techBadges = [
-  'AI Activity Recognition', 'Real-time Alerts', 'Privacy-First Processing',
-  'Offline-Ready', 'Optional Cloud', 'Adaptive Learning'
+  'Jetson Orin Nano', 'FPGA Logic Controller', 'YOLO Vision Models',
+  'Edge AI Processing', 'Wi-Fi + GSM + LoRa', 'ESP-NOW Mesh'
 ]
 
 function NodeCard({ node, isHub = false }) {
@@ -35,7 +35,7 @@ function NodeCard({ node, isHub = false }) {
         transition: 'all 0.3s ease',
         position: 'relative',
         cursor: 'default',
-        minWidth: isHub ? '280px' : '140px',
+        minWidth: isHub ? 'min(280px, 80vw)' : 'min(140px, 38vw)',
       }}
     >
       {isHub && (
@@ -47,16 +47,14 @@ function NodeCard({ node, isHub = false }) {
         }} />
       )}
       <div style={{
-        fontFamily: 'Poppins, sans-serif',
+        fontFamily: 'Syne, sans-serif',
         fontSize: isHub ? '16px' : '13px',
-        fontWeight: 600,
-        color: node.color,
-        letterSpacing: '0.5px',
+        fontWeight: 700, color: node.color,
       }}>
         {node.label}
       </div>
       {node.sublabel && (
-        <div style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '11px', color: 'rgba(255,255,255,0.5)', marginTop: '4px', letterSpacing: '0.3px' }}>
+        <div style={{ fontFamily: 'DM Sans', fontSize: '11px', color: 'rgba(255,255,255,0.4)', marginTop: '4px' }}>
           {node.sublabel}
         </div>
       )}
@@ -66,18 +64,17 @@ function NodeCard({ node, isHub = false }) {
         <div style={{
           position: 'absolute', bottom: 'calc(100% + 8px)', left: '50%',
           transform: 'translateX(-50%)',
-          background: 'rgba(0,0,0,0.95)',
-          border: '1px solid rgba(0,200,255,0.3)',
-          borderRadius: '8px', padding: '10px 14px',
+          background: 'rgba(0,0,0,0.9)',
+          border: '1px solid rgba(0,200,255,0.2)',
+          borderRadius: '8px', padding: '8px 12px',
           whiteSpace: 'nowrap', zIndex: 10,
           animation: 'fade-in 0.2s ease'
         }}>
           {node.specs.map((s, i) => (
             <div key={i} style={{
-              fontFamily: 'DM Sans, sans-serif', fontSize: '11px',
-              color: 'rgba(255,255,255,0.8)',
-              padding: '3px 0',
-              letterSpacing: '0.3px'
+              fontFamily: 'DM Sans', fontSize: '11px',
+              color: 'rgba(255,255,255,0.7)',
+              padding: '2px 0'
             }}>
               · {s}
             </div>
@@ -143,14 +140,14 @@ export default function Architecture() {
             <div className="label-pill">HARDWARE + AI PLATFORM</div>
           </div>
           <h2 className="reveal gradient-text" style={{
-            fontFamily: 'Poppins, sans-serif', fontWeight: 700,
-            fontSize: 'clamp(28px, 4.5vw, 56px)', marginBottom: '16px', letterSpacing: '0.5px'
+            fontFamily: 'Syne, sans-serif', fontWeight: 800,
+            fontSize: 'clamp(28px, 4vw, 52px)', marginBottom: '16px'
           }}>
-            A Modular Security Ecosystem
+            A Modular Security Ecosystem.
           </h2>
           <p className="reveal" style={{
-            fontFamily: 'DM Sans, sans-serif', fontSize: '16px',
-            color: 'rgba(255,255,255,0.6)', maxWidth: '500px', margin: '0 auto', letterSpacing: '0.3px', lineHeight: '1.6'
+            fontFamily: 'DM Sans', fontSize: '16px',
+            color: 'rgba(255,255,255,0.5)', maxWidth: '500px', margin: '0 auto'
           }}>
             Every component is purpose-built. Every connection is intelligent. Every layer works offline.
           </p>
@@ -159,7 +156,7 @@ export default function Architecture() {
         {/* Architecture diagram */}
         <div className="reveal" style={{ maxWidth: '860px', margin: '0 auto 56px' }}>
           {/* Sensor row */}
-          <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '0' }}>
+          <div className="arch-sensors" style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '0' }}>
             {nodes.sensors.map((node, i) => <NodeCard key={i} node={node} />)}
           </div>
 
@@ -201,10 +198,10 @@ export default function Architecture() {
           borderLeft: '3px solid rgba(0,200,255,0.5)'
         }}>
           <div>
-            <h3 style={{ fontFamily: 'Poppins, sans-serif', fontSize: '20px', fontWeight: 600, color: '#fff', marginBottom: '6px', letterSpacing: '0.3px' }}>
+            <h3 style={{ fontFamily: 'Syne, sans-serif', fontSize: '22px', fontWeight: 700, color: '#fff', marginBottom: '6px' }}>
               Already have cameras?
             </h3>
-            <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '14px', color: 'rgba(255,255,255,0.6)', maxWidth: '420px', letterSpacing: '0.2px', lineHeight: '1.5' }}>
+            <p style={{ fontFamily: 'DM Sans', fontSize: '14px', color: 'rgba(255,255,255,0.5)', maxWidth: '420px' }}>
               Custos retrofits your existing CCTV into AI-powered surveillance. No replacement needed.
             </p>
           </div>

@@ -16,10 +16,22 @@ export default function Footer() {
       background: 'rgba(0,0,0,0.6)',
     }}>
       <style>{`
+        footer { padding: 40px 80px; }
         @media (max-width: 768px) {
-          footer { padding: 32px 24px; flex-direction: column; text-align: center; }
+          footer {
+            padding: 32px 20px !important;
+            flex-direction: column !important;
+            text-align: center !important;
+            align-items: center !important;
+          }
+          footer > div:last-child {
+            align-items: center !important;
+          }
         }
-        .footer-link { color: rgba(255,255,255,0.4); text-decoration: none; font-family: 'DM Sans'; font-size: 13px; transition: color 0.2s; }
+        .footer-link {
+          color: rgba(255,255,255,0.4); text-decoration: none;
+          font-family: 'DM Sans'; font-size: 13px; transition: color 0.2s;
+        }
         .footer-link:hover { color: #fff; }
       `}</style>
 

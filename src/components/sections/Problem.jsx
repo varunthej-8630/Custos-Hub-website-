@@ -28,8 +28,8 @@ export default function Problem() {
             </div>
           </div>
           <h2 className="reveal gradient-text" style={{
-            fontFamily: 'Kanit, sans-serif', fontWeight: 800,
-            fontSize: 'clamp(32px, 5vw, 52px)', marginBottom: '16px', letterSpacing: '1px'
+            fontFamily: 'Syne, sans-serif', fontWeight: 800,
+            fontSize: 'clamp(32px, 5vw, 52px)', marginBottom: '16px'
           }}>
             Security Systems Are Still Blind.
           </h2>
@@ -42,7 +42,7 @@ export default function Problem() {
         </div>
 
         {/* Card grid */}
-        <div style={{
+        <div className="problem-grid" style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(3, 1fr)',
           gap: '16px',
@@ -61,7 +61,7 @@ export default function Problem() {
               {/* Subtle red tint on hover handled via CSS */}
               <div style={{ fontSize: '28px', marginBottom: '12px' }}>{card.icon}</div>
               <h3 style={{
-                fontFamily: 'Kanit, sans-serif',
+                fontFamily: 'Syne, sans-serif',
                 fontSize: '18px', fontWeight: 700,
                 marginBottom: '8px', color: '#fff'
               }}>

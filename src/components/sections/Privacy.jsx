@@ -15,22 +15,22 @@ export function Privacy() {
             <div className="label-pill">PRIVACY BY DESIGN</div>
           </div>
           <h2 className="reveal" style={{
-            fontFamily: 'Kanit, sans-serif', fontWeight: 800,
-            fontSize: 'clamp(28px, 4vw, 48px)', color: '#fff', letterSpacing: '0.8px'
+            fontFamily: 'Syne, sans-serif', fontWeight: 800,
+            fontSize: 'clamp(28px, 4vw, 48px)', color: '#fff'
           }}>
             Your Data Stays Yours.
           </h2>
         </div>
-        <div style={{
+        <div className="privacy-grid" style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
           gap: '20px'
         }}>
           {privacyCards.map((card, i) => (
             <div key={i} className="glass-card reveal" style={{ padding: '28px' }}>
               <div style={{ fontSize: '28px', marginBottom: '12px' }}>{card.icon}</div>
               <h3 style={{
-                fontFamily: 'Kanit, sans-serif', fontSize: '17px', fontWeight: 700,
+                fontFamily: 'Syne, sans-serif', fontSize: '17px', fontWeight: 700,
                 color: '#fff', marginBottom: '8px'
               }}>{card.title}</h3>
               <p style={{

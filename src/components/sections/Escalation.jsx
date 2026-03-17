@@ -33,8 +33,8 @@ export default function Escalation() {
             </div>
           </div>
           <h2 className="reveal" style={{
-            fontFamily: 'Kanit, sans-serif', fontWeight: 800,
-            fontSize: 'clamp(28px, 4vw, 52px)', color: '#fff', marginBottom: '16px', letterSpacing: '0.8px'
+            fontFamily: 'Syne, sans-serif', fontWeight: 800,
+            fontSize: 'clamp(28px, 4vw, 52px)', color: '#fff', marginBottom: '16px'
           }}>
             Custos Doesn't Wait for You.
           </h2>
@@ -47,11 +47,11 @@ export default function Escalation() {
         </div>
 
         {/* Decision tree */}
-        <div style={{ maxWidth: '640px', margin: '0 auto 56px', position: 'relative' }}>
+        <div className="escalation-tree" style={{ maxWidth: '640px', margin: '0 auto 56px', position: 'relative' }}>
           {escalationSteps.map((step, i) => (
             <div key={i} className="reveal" style={{ animationDelay: `${i * 100}ms` }}>
               {/* Step node */}
-              <div className="glass-card" style={{
+              <div className="glass-card escalation-step" style={{
                 padding: '18px 24px',
                 display: 'flex',
                 alignItems: 'center',
@@ -116,7 +116,7 @@ export default function Escalation() {
           borderRadius: '16px', padding: '28px'
         }}>
           {/* Toggle */}
-          <div style={{
+          <div className="escalation-toggle" style={{
             display: 'flex', gap: '8px', marginBottom: '20px',
             background: 'rgba(0,0,0,0.4)', borderRadius: '100px',
             padding: '4px', width: 'fit-content', margin: '0 auto 20px'
