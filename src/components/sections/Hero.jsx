@@ -354,6 +354,24 @@ export default function Hero() {
       {/* ── HTML Content ─────────────────────────────────────── */}
       <div className="hero-content">
 
+        {/* Creator Attribution */}
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          style={{
+            fontFamily: 'DM Sans, sans-serif',
+            fontSize: '14px',
+            fontWeight: 600,
+            marginBottom: '32px',
+            color: 'rgba(255,255,255,0.7)',
+            letterSpacing: '1.5px',
+            textTransform: 'uppercase',
+          }}
+        >
+          Custos AI Surveillance System by Varun Thej
+        </motion.h1>
+
         {/* Top badge */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

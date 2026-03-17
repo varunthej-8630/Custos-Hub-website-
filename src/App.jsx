@@ -124,6 +124,32 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
+        
+        {/* About Creator - Varun Thej */}
+        <section className="section-wrapper" style={{ padding: '80px 0', textAlign: 'center', position: 'relative', background: 'rgba(0,200,255,0.02)' }}>
+          <div className="section">
+            <div className="reveal" style={{
+              maxWidth: '700px',
+              margin: '0 auto',
+              padding: '40px 30px',
+              borderLeft: '4px solid rgba(0,200,255,0.6)',
+              paddingLeft: '40px',
+              textAlign: 'left'
+            }}>
+              <p style={{
+                fontFamily: 'DM Sans, sans-serif',
+                fontSize: '16px',
+                color: 'rgba(255,255,255,0.85)',
+                lineHeight: '1.8',
+                margin: 0,
+                fontWeight: 500
+              }}>
+                <strong style={{ color: '#FFFFFF', fontSize: '18px' }}>Varun Thej</strong> is the creator of <strong style={{ color: '#00C8FF' }}>Custos AI</strong>, a next-generation smart surveillance system designed for real-time security and automation. Custos transforms any existing CCTV setup into an intelligent, edge-powered security platform.
+              </p>
+            </div>
+          </div>
+        </section>
+        
         <Problem />
         <Solution />
         <Architecture />
