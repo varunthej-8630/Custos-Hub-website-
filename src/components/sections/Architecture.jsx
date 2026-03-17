@@ -7,7 +7,7 @@ const nodes = {
     { label: 'Audio Nodes', specs: ['Distress detection', 'Glass-break sensor', 'Mesh audio'], color: '#00C8FF' },
     { label: 'Door Sensors', specs: ['Magnetic contacts', 'Force detection', 'Tamper alert'], color: '#00C8FF' },
   ],
-  hub: { label: 'Central AI Hub', sublabel: 'Jetson Orin Nano + FPGA', color: '#0057FF' },
+  hub: { label: 'Central AI Hub', sublabel: 'Microcontroller unit', color: '#0057FF' },
   output: [
     { label: 'Mobile Command App', specs: ['iOS + Android', 'Real-time alerts', 'Remote control'], color: '#00C8FF' },
     { label: 'Cloud Sync (optional)', specs: ['Encrypted backup', 'Optional only', 'GDPR compliant'], color: 'rgba(255,255,255,0.4)' },
@@ -15,8 +15,8 @@ const nodes = {
 }
 
 const techBadges = [
-  'Jetson Orin Nano', 'FPGA Logic Controller', 'YOLO Vision Models',
-  'Edge AI Processing', 'Wi-Fi + GSM + LoRa', 'ESP-NOW Mesh'
+  'AI Compute Engine', 'Real-Time Control Matrix', 'Vision Intelligence Models',
+  'Edge Intelligence Layer', 'Multi-Channel Connectivity', 'Adaptive Mesh Network'
 ]
 
 function NodeCard({ node, isHub = false }) {
