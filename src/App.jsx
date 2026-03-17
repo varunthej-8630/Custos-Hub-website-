@@ -139,6 +139,151 @@ export default function App() {
         <Recruitment />
         <Community />
         <FinalCTA />
+        
+        {/* ✨ New Sections */}
+        <section className="section-wrapper" style={{ padding: '120px 0', textAlign: 'center', position: 'relative' }}>
+          <div className="section">
+            <div className="reveal" style={{ marginBottom: '20px' }}>
+              <div className="label-pill">UNIVERSAL COMPATIBILITY</div>
+            </div>
+            <h2 className="reveal gradient-text" style={{
+              fontFamily: 'Poppins, sans-serif', fontWeight: 700,
+              fontSize: 'clamp(28px, 4.5vw, 56px)', marginBottom: '16px', letterSpacing: '0.5px'
+            }}>
+              Upgrade Any CCTV Into AI Intelligence
+            </h2>
+            <p className="reveal" style={{
+              fontFamily: 'DM Sans, sans-serif', fontSize: '16px',
+              color: 'rgba(255,255,255,0.6)', maxWidth: '500px', margin: '0 auto', letterSpacing: '0.3px', lineHeight: '1.6'
+            }}>
+              Custos connects to any CCTV or DVR and transforms it into an intelligent AI-powered system.
+            </p>
+          </div>
+        </section>
+
+        {/* Use Cases Section */}
+        <section className="section-wrapper" style={{ padding: '120px 0', textAlign: 'center', position: 'relative' }}>
+          <div className="section">
+            <h2 className="reveal gradient-text" style={{
+              fontFamily: 'Poppins, sans-serif', fontWeight: 700,
+              fontSize: 'clamp(28px, 4.5vw, 56px)', marginBottom: '56px', letterSpacing: '0.5px'
+            }}>
+              Built for Every Environment
+            </h2>
+            <div className="reveal" style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+              gap: '24px',
+              maxWidth: '900px',
+              margin: '0 auto'
+            }}>
+              {['Homes', 'Elder Care', 'Businesses', 'Defense'].map((item, i) => (
+                <div key={i} className="glass-card" style={{
+                  padding: '28px',
+                  border: '1px solid rgba(0,200,255,0.15)',
+                  borderRadius: '16px',
+                  textAlign: 'center'
+                }}>
+                  <h3 style={{
+                    fontFamily: 'Poppins, sans-serif',
+                    fontSize: '18px',
+                    fontWeight: 600,
+                    color: '#00C8FF',
+                    letterSpacing: '0.3px'
+                  }}>
+                    {item}
+                  </h3>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Join Network Section */}
+        <section className="section-wrapper" style={{ padding: '120px 0', textAlign: 'center', position: 'relative' }}>
+          <div className="section">
+            <div className="reveal" style={{ marginBottom: '20px' }}>
+              <div className="label-pill">EARLY ACCESS</div>
+            </div>
+            <h2 className="reveal gradient-text" style={{
+              fontFamily: 'Poppins, sans-serif', fontWeight: 700,
+              fontSize: 'clamp(28px, 4.5vw, 56px)', marginBottom: '32px', letterSpacing: '0.5px'
+            }}>
+              Join the Custos Intelligence Network
+            </h2>
+            <div className="reveal" style={{
+              display: 'flex',
+              gap: '12px',
+              justifyContent: 'center',
+              flexWrap: 'wrap',
+              maxWidth: '500px',
+              margin: '0 auto'
+            }}>
+              <input
+                type="email"
+                placeholder="Your Email"
+                style={{
+                  padding: '12px 16px',
+                  borderRadius: '8px',
+                  border: '1px solid rgba(0,200,255,0.3)',
+                  background: 'rgba(0,200,255,0.05)',
+                  color: '#fff',
+                  fontFamily: 'DM Sans, sans-serif',
+                  fontSize: '14px',
+                  flex: 1,
+                  minWidth: '200px'
+                }}
+              />
+              <button style={{
+                padding: '12px 28px',
+                borderRadius: '8px',
+                border: 'none',
+                background: 'linear-gradient(135deg, #0057FF, #00C8FF)',
+                color: '#fff',
+                fontFamily: 'Poppins, sans-serif',
+                fontWeight: 600,
+                fontSize: '14px',
+                cursor: 'pointer',
+                transition: 'all 0.3s ease'
+              }}>
+                Join
+              </button>
+            </div>
+          </div>
+        </section>
+
+        {/* Feedback Section */}
+        <section className="section-wrapper" style={{ padding: '120px 0', textAlign: 'center', position: 'relative' }}>
+          <div className="section">
+            <h2 className="reveal gradient-text" style={{
+              fontFamily: 'Poppins, sans-serif', fontWeight: 700,
+              fontSize: 'clamp(28px, 4.5vw, 56px)', marginBottom: '32px', letterSpacing: '0.5px'
+            }}>
+              What Security Problems Do You Face?
+            </h2>
+            <div className="reveal" style={{
+              maxWidth: '500px',
+              margin: '0 auto'
+            }}>
+              <textarea
+                placeholder="Share your feedback or security challenges..."
+                style={{
+                  width: '100%',
+                  minHeight: '120px',
+                  padding: '14px 16px',
+                  borderRadius: '8px',
+                  border: '1px solid rgba(0,200,255,0.3)',
+                  background: 'rgba(0,200,255,0.05)',
+                  color: '#fff',
+                  fontFamily: 'DM Sans, sans-serif',
+                  fontSize: '14px',
+                  resize: 'vertical',
+                  outline: 'none'
+                }}
+              />
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </>

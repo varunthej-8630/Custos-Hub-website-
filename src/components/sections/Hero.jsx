@@ -404,7 +404,7 @@ export default function Hero() {
             textShadow: '0 1px 20px rgba(0,0,0,0.8)',
           }}
         >
-          Don't replace — make an upgrade.
+          Connect. Upgrade. Transform any CCTV into an AI-powered security intelligence system.
         </motion.p>
 
         {/* Secondary badge */}
