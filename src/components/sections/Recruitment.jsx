@@ -147,7 +147,7 @@ export default function Recruitment() {
   }
 
   return (
-    <section className="section-wrapper" style={{ padding: '120px 0', position: 'relative' }}>
+    <section id="enrollment" className="section-wrapper" style={{ padding: '120px 0', position: 'relative' }}>
 
       {/* Ambient */}
       <div style={{

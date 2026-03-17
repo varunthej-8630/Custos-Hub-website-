@@ -509,30 +509,32 @@ export default function Hero() {
           </motion.div>
         )}
 
-        {/* Scroll indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5, duration: 1 }}
-          style={{
-            position: 'absolute', bottom: isMobile ? 88 : 28,
-            display: 'flex', flexDirection: 'column',
-            alignItems: 'center', gap: 8,
-          }}
-        >
-          <span style={{
-            fontFamily: 'DM Sans', fontSize: 11,
-            color: 'rgba(255,255,255,0.3)',
-            letterSpacing: '2px', textTransform: 'uppercase',
-          }}>
-            Scroll
-          </span>
-          <div style={{
-            width: 1, height: 40,
-            background: 'linear-gradient(to bottom, rgba(0,200,255,0.6), transparent)',
-            animation: 'pulse-dot 2s infinite',
-          }}/>
-        </motion.div>
+        {/* Scroll indicator — hidden on mobile to avoid bottom nav overlap */}
+        {!isMobile && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.5, duration: 1 }}
+            style={{
+              position: 'absolute', bottom: 28,
+              display: 'flex', flexDirection: 'column',
+              alignItems: 'center', gap: 8,
+            }}
+          >
+            <span style={{
+              fontFamily: 'DM Sans', fontSize: 11,
+              color: 'rgba(255,255,255,0.3)',
+              letterSpacing: '2px', textTransform: 'uppercase',
+            }}>
+              Scroll
+            </span>
+            <div style={{
+              width: 1, height: 40,
+              background: 'linear-gradient(to bottom, rgba(0,200,255,0.6), transparent)',
+              animation: 'pulse-dot 2s infinite',
+            }}/>
+          </motion.div>
+        )}
       </div>
 
       {/* ── Demos Modal ────────────────────────────────────────── */}
