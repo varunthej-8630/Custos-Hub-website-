@@ -224,8 +224,8 @@ export default function Offline() {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
             style={{
-              fontFamily: 'Syne, sans-serif', fontWeight: 800,
-              fontSize: 'clamp(26px,4vw,52px)', marginBottom: 16,
+              fontFamily: 'Crimson Text, serif', fontWeight: 700,
+              fontSize: 'clamp(30px,5vw,56px)', marginBottom: 16, letterSpacing: '3px', lineHeight: 1.15,
             }}
           >
             Your Security Shouldn't<br/>Depend on Your Wi-Fi.

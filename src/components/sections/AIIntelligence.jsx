@@ -120,8 +120,8 @@ export default function AIIntelligence() {
             <div className="label-pill">WHAT CUSTOS SEES</div>
           </div>
           <h2 className="reveal" style={{
-            fontFamily: 'Syne, sans-serif', fontWeight: 800,
-            fontSize: 'clamp(28px, 4vw, 52px)', color: '#fff', marginBottom: '16px'
+            fontFamily: 'Crimson Text, serif', fontWeight: 700,
+            fontSize: 'clamp(32px, 4.5vw, 56px)', color: '#fff', marginBottom: '16px', letterSpacing: '3px', lineHeight: 1.15
           }}>
             Security Intelligence.<br />Not Just Surveillance.
           </h2>

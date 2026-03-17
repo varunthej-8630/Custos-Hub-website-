@@ -33,8 +33,8 @@ export default function Escalation() {
             </div>
           </div>
           <h2 className="reveal" style={{
-            fontFamily: 'Syne, sans-serif', fontWeight: 800,
-            fontSize: 'clamp(28px, 4vw, 52px)', color: '#fff', marginBottom: '16px'
+            fontFamily: 'Crimson Text, serif', fontWeight: 700,
+            fontSize: 'clamp(32px, 5vw, 60px)', color: '#fff', marginBottom: '16px', letterSpacing: '3px', lineHeight: 1.15
           }}>
             Custos Doesn't Wait for You.
           </h2>

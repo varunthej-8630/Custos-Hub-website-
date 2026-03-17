@@ -140,8 +140,8 @@ export default function Architecture() {
             <div className="label-pill">HARDWARE + AI PLATFORM</div>
           </div>
           <h2 className="reveal gradient-text" style={{
-            fontFamily: 'Syne, sans-serif', fontWeight: 800,
-            fontSize: 'clamp(28px, 4vw, 52px)', marginBottom: '16px'
+            fontFamily: 'Crimson Text, serif', fontWeight: 700,
+            fontSize: 'clamp(32px, 4.5vw, 56px)', marginBottom: '16px', letterSpacing: '3px', lineHeight: 1.15
           }}>
             A Modular Security Ecosystem.
           </h2>
@@ -198,7 +198,7 @@ export default function Architecture() {
           borderLeft: '3px solid rgba(0,200,255,0.5)'
         }}>
           <div>
-            <h3 style={{ fontFamily: 'Syne, sans-serif', fontSize: '22px', fontWeight: 700, color: '#fff', marginBottom: '6px' }}>
+            <h3 style={{ fontFamily: 'Crimson Text, serif', fontSize: '22px', fontWeight: 700, color: '#fff', marginBottom: '6px' }}>
               Already have cameras?
             </h3>
             <p style={{ fontFamily: 'DM Sans', fontSize: '14px', color: 'rgba(255,255,255,0.5)', maxWidth: '420px' }}>

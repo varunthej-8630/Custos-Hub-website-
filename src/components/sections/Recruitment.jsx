@@ -178,8 +178,8 @@ export default function Recruitment() {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
             style={{
-              fontFamily: 'Syne, sans-serif', fontWeight: 800,
-              fontSize: 'clamp(28px,4vw,50px)', color: '#fff', marginBottom: 16,
+              fontFamily: 'Crimson Text, serif', fontWeight: 700,
+              fontSize: 'clamp(32px,4.5vw,54px)', color: '#fff', marginBottom: 16, letterSpacing: '3px', lineHeight: 1.15,
             }}
           >
             We're Looking for Builders.

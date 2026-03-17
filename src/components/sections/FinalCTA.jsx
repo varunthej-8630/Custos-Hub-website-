@@ -203,9 +203,9 @@ export default function FinalCTA() {
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.1 }}
           style={{
-            fontFamily: 'Syne, sans-serif', fontWeight: 800,
-            fontSize: 'clamp(28px, 5vw, 58px)',
-            color: '#fff', marginBottom: 8, lineHeight: 1.1,
+            fontFamily: 'Crimson Text, serif', fontWeight: 700,
+            fontSize: 'clamp(32px, 6vw, 64px)',
+            color: '#fff', marginBottom: 8, lineHeight: 1.05, letterSpacing: '3px',
           }}
         >
           Security should not just record crime.
@@ -218,9 +218,9 @@ export default function FinalCTA() {
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
           style={{
-            fontFamily: 'Syne, sans-serif', fontWeight: 800,
-            fontSize: 'clamp(28px, 5vw, 58px)',
-            marginBottom: 32, lineHeight: 1.1,
+            fontFamily: 'Crimson Text, serif', fontWeight: 700,
+            fontSize: 'clamp(32px, 6vw, 64px)',
+            marginBottom: 32, lineHeight: 1.05, letterSpacing: '3px',
           }}
         >
           It should prevent it.

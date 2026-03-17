@@ -155,8 +155,8 @@ export default function Solution() {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
             style={{
-              fontFamily: 'Syne, sans-serif', fontWeight: 800,
-              fontSize: 'clamp(28px,4.5vw,52px)', color: '#fff', marginBottom: 16,
+              fontFamily: 'Crimson Text, serif', fontWeight: 700,
+              fontSize: 'clamp(32px,5vw,56px)', color: '#fff', marginBottom: 16, letterSpacing: '3px', lineHeight: 1.15,
             }}
           >
             Meet Custos. Your Autonomous AI Guard.

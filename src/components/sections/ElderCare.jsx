@@ -37,8 +37,8 @@ export default function ElderCare() {
               ELDER CARE MODE
             </div>
             <h3 style={{
-              fontFamily: 'Syne, sans-serif', fontSize: '26px', fontWeight: 700,
-              color: '#fff', marginBottom: '24px'
+              fontFamily: 'Crimson Text, serif', fontSize: '32px', fontWeight: 700,
+              color: '#fff', marginBottom: '24px', letterSpacing: '2px', lineHeight: 1.15
             }}>
               Peace of mind<br />for families.
             </h3>
@@ -71,8 +71,8 @@ export default function ElderCare() {
               BUSINESS INTELLIGENCE
             </div>
             <h3 style={{
-              fontFamily: 'Syne, sans-serif', fontSize: '26px', fontWeight: 700,
-              color: '#fff', marginBottom: '24px'
+              fontFamily: 'Crimson Text, serif', fontSize: '32px', fontWeight: 700,
+              color: '#fff', marginBottom: '24px', letterSpacing: '2px', lineHeight: 1.15
             }}>
               Your cameras become<br />data engines.
             </h3>

@@ -23,9 +23,9 @@ export default function Metrics() {
             borderRight: i < metrics.length - 1 ? '1px solid rgba(255,255,255,0.06)' : 'none',
           }}>
             <div className="gradient-text" style={{
-              fontFamily: 'Syne, sans-serif', fontWeight: 800,
-              fontSize: 'clamp(36px, 5vw, 60px)',
-              marginBottom: '8px', display: 'block'
+              fontFamily: 'Crimson Text, serif', fontWeight: 700, letterSpacing: '3px',
+              fontSize: 'clamp(40px, 6vw, 68px)',
+              marginBottom: '8px', display: 'block', lineHeight: 1.05
             }}>
               {m.value}
             </div>

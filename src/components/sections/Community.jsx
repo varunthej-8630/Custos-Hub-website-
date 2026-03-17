@@ -75,8 +75,8 @@ export default function Community() {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
             style={{
-              fontFamily: 'Syne, sans-serif', fontWeight: 800,
-              fontSize: 'clamp(24px,4vw,44px)', color: '#fff', marginBottom: 16,
+              fontFamily: 'Crimson Text, serif', fontWeight: 700,
+              fontSize: 'clamp(28px,4.5vw,50px)', color: '#fff', marginBottom: 16, letterSpacing: '3px', lineHeight: 1.15,
             }}
           >
             What security problem do you face?

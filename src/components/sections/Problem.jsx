@@ -28,8 +28,8 @@ export default function Problem() {
             </div>
           </div>
           <h2 className="reveal gradient-text" style={{
-            fontFamily: 'Syne, sans-serif', fontWeight: 800,
-            fontSize: 'clamp(32px, 5vw, 52px)', marginBottom: '16px'
+            fontFamily: 'Crimson Text, serif', fontWeight: 700,
+            fontSize: 'clamp(36px, 5.5vw, 60px)', marginBottom: '16px', letterSpacing: '3px', lineHeight: 1.15
           }}>
             Security Systems Are Still Blind.
           </h2>

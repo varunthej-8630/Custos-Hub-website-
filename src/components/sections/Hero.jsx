@@ -181,32 +181,35 @@ export default function Hero() {
       <style>{`
         /* Hero headline — scales down properly on mobile */
         .hero-title-custos {
-          font-family: 'Oswald', 'Syne', sans-serif;
+          font-family: 'Fraunces', serif;
           color: #FFFFFF;
-          font-weight: 800;
-          letter-spacing: 4px;
-          line-height: 1.05;
+          font-weight: 900;
+          font-size: clamp(52px, 14vw, 130px);
+          letter-spacing: 3px;
+          line-height: 1.0;
           display: block;
           text-shadow:
-            4px 4px 0px rgba(0,200,255,0.9),
-            8px 8px 0px rgba(255,59,48,0.5),
-            0 0 30px rgba(0,200,255,0.7);
-          filter: drop-shadow(0 0 20px rgba(0,200,255,0.6));
-          font-size: clamp(44px, 12vw, 110px);
+            6px 6px 0px rgba(0,200,255,0.95),
+            12px 12px 0px rgba(255,59,48,0.6),
+            0 0 40px rgba(0,200,255,0.8);
+          filter: drop-shadow(0 0 25px rgba(0,200,255,0.7));
         }
 
         /* ✅ FIX 1: remove nowrap, let it wrap on mobile */
         .hero-title-sub {
+          font-family: 'Fraunces', serif;
           background: linear-gradient(90deg, #FFFFFF 0%, #00C8FF 100%);
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: transparent;
           display: block;
           /* NO white-space: nowrap here */
-          font-size: clamp(20px, 5vw, 56px);
-          line-height: 1.2;
+          font-size: clamp(24px, 6vw, 64px);
+          line-height: 1.15;
           max-width: 100%;
           word-break: break-word;
+          font-weight: 800;
+          letter-spacing: 1px;
         }
 
         /* ✅ FIX 2: button stack on mobile */
@@ -376,7 +379,7 @@ export default function Hero() {
             width: '100%',
             maxWidth: 820,
             marginBottom: 18,
-            letterSpacing: '0.5px',
+            letterSpacing: '2px',
           }}
         >
           {/* "Custos" — big 3D text shadow effect */}

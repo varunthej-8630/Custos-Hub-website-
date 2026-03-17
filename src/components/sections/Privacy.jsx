@@ -15,8 +15,8 @@ export function Privacy() {
             <div className="label-pill">PRIVACY BY DESIGN</div>
           </div>
           <h2 className="reveal" style={{
-            fontFamily: 'Syne, sans-serif', fontWeight: 800,
-            fontSize: 'clamp(28px, 4vw, 48px)', color: '#fff'
+            fontFamily: 'Crimson Text, serif', fontWeight: 700,
+            fontSize: 'clamp(32px, 4.5vw, 56px)', color: '#fff', letterSpacing: '3px', lineHeight: 1.15
           }}>
             Your Data Stays Yours.
           </h2>

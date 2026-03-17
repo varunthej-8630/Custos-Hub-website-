@@ -112,9 +112,9 @@ export default function OpenEye() {
             </div>
           </div>
           <h2 className="reveal" style={{
-            fontFamily: 'Syne, sans-serif', fontWeight: 800,
-            fontSize: 'clamp(36px, 6vw, 72px)', color: '#fff',
-            marginBottom: '20px', lineHeight: 1.05
+            fontFamily: 'Crimson Text, serif', fontWeight: 700,
+            fontSize: 'clamp(40px, 7vw, 80px)', color: '#fff',
+            marginBottom: '20px', lineHeight: 1.0, letterSpacing: '3px'
           }}>
             Open Eye Network.
           </h2>
