@@ -145,8 +145,13 @@ export default function App() {
                 letterSpacing: '1.5px',
                 lineHeight: 1.3
               }}>
-                Varun Thej – Custos AI Surveillance System
-              </h1>
+                Your Space,
+Under Watch.
+CUSTOS detects anomalies in real time using your own existing camera. Pacing, crouching, zone intrusions — caught instantly. No cloud. No server. Everything visible, 
+nothing missed
+</h1> - by Varun thej ,                                                                                                                                                                                                               
+ 
+
               <p style={{
                 fontFamily: 'DM Sans, sans-serif',
                 fontSize: '16px',
@@ -155,7 +160,7 @@ export default function App() {
                 margin: 0,
                 fontWeight: 500
               }}>
-                Custos AI is a smart surveillance system developed by Varun Thej, focused on AI-powered security, real-time alerts, and automation.
+                
               </p>
             </div>
           </div>

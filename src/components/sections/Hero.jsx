@@ -369,7 +369,7 @@ export default function Hero() {
             textTransform: 'uppercase',
           }}
         >
-          Custos AI Surveillance System by Varun Thej
+          
         </motion.h1>
 
         {/* Top badge */}
