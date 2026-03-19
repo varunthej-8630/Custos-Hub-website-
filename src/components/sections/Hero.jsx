@@ -150,12 +150,12 @@ function GridOverlay() {
 
 // ─── Phases data ──────────────────────────────────────────────
 const phases = [
-  { id: 1, title: 'Phase 1', subtitle: 'Prototype & Validation',   desc: 'Core AI hub, retrofit module, basic detection suite',         icon: '🔬' },
-  { id: 2, title: 'Phase 2', subtitle: 'Residential Deployment',    desc: 'Homes, apartments, small businesses',                         icon: '🏠' },
-  { id: 3, title: 'Phase 3', subtitle: 'Platform Expansion',        desc: 'Elder care, analytics, advanced escalation modes',            icon: '📈' },
-  { id: 4, title: 'Phase 4', subtitle: 'Open Eye Network',          desc: 'City-scale distributed intelligence',                         icon: '🌐' },
-  { id: 5, title: 'Phase 5', subtitle: 'Advanced Features',         desc: 'Multi-protocol communication, edge processing enhancements',  icon: '⚡' },
-  { id: 6, title: 'Phase 6', subtitle: 'Global Scale',              desc: 'International deployment, enterprise solutions',              icon: '🚀' },
+  { id: 1, title: 'Phase 1', subtitle: 'Prototype & Validation',   desc: 'Core AI hub, retrofit module, basic detection suite',         icon: '🔬' , demo: '/custos-workflow.pdf'},
+  { id: 2, title: 'Phase 2', subtitle: 'Residential Deployment',    desc: 'Homes, apartments, small businesses',                         icon: '🏠' , demo: null},
+  { id: 3, title: 'Phase 3', subtitle: 'Platform Expansion',        desc: 'Elder care, analytics, advanced escalation modes',            icon: '📈' , demo: null},
+  { id: 4, title: 'Phase 4', subtitle: 'Open Eye Network',          desc: 'City-scale distributed intelligence',                         icon: '🌐' , demo: null},
+  { id: 5, title: 'Phase 5', subtitle: 'Advanced Features',         desc: 'Multi-protocol communication, edge processing enhancements',  icon: '⚡' , demo: null},
+  { id: 6, title: 'Phase 6', subtitle: 'Global Scale',              desc: 'International deployment, enterprise solutions',              icon: '🚀' , demo: null},
 ]
 
 // ─── Hero ─────────────────────────────────────────────────────
@@ -723,17 +723,30 @@ export default function Hero() {
                     borderRadius: 8, padding: '12px 16px',
                     textAlign: 'center',
                   }}>
-                    <p style={{
-                      fontFamily: 'DM Sans', fontSize: 13,
-                      color: 'rgba(0,200,255,0.65)', margin: 0,
-                    }}>
-                      🔗 Demo link coming soon
-                    </p>
+                    {phases[currentPhase].demo ? (
+                  <a
+                    href={phases[currentPhase].demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: 'block',
+                      color: '#00C8FF',
+                      fontWeight: 600,
+                      textDecoration: 'none',
+                    }}
+                  >
+                    🔗 View Demo
+                  </a>
+                ) : (
+                  <p style={{ color: 'rgba(0,200,255,0.65)' }}>
+                    🔗 Demo coming soon
+                  </p>
+                )}
                   </div>
                 </motion.div>
               </AnimatePresence>
 
-              {/* Nav buttons */}
+              {/* Nav buttons */} 
               <div style={{
                 display: 'flex', gap: 12,
                 justifyContent: 'space-between',
