@@ -150,9 +150,9 @@ function GridOverlay() {
 
 // ─── Phases data ──────────────────────────────────────────────
 const phases = [
-  { id: 1, title: 'Phase 1', subtitle: 'Prototype & Validation',   desc: 'Core AI hub, retrofit module, basic detection suite',         icon: '🔬' , demo: '/custos-workflow.pdf'},
-  { id: 2, title: 'Phase 2', subtitle: 'Residential Deployment',    desc: 'Homes, apartments, small businesses',                         icon: '🏠' , demo: 'https://custos-eldercare.vercel.app/'},
-  { id: 3, title: 'Phase 3', subtitle: 'Platform Expansion',        desc: 'Elder care, analytics, advanced escalation modes',            icon: '📈' , demo: null},
+  { id: 1, title: 'Phase 1', subtitle: 'Prototype & Validation',   desc: 'Core AI hub, retrofit module, basic detection suite asset protection',         icon: '🔬' , demo: '/custos-workflow.pdf'},
+  { id: 2, title: 'Phase 2', subtitle: 'Residential Deployment',    desc: 'Elder care, analytics, advanced escalation modes',                         icon: '🏠' , demo: 'https://custos-eldercare.vercel.app/'},
+  { id: 3, title: 'Phase 3', subtitle: 'Platform Expansion',        desc: 'Homes, apartments, small businesses',            icon: '📈' , demo: null},
   { id: 4, title: 'Phase 4', subtitle: 'Open Eye Network',          desc: 'City-scale distributed intelligence',                         icon: '🌐' , demo: null},
   { id: 5, title: 'Phase 5', subtitle: 'Advanced Features',         desc: 'Multi-protocol communication, edge processing enhancements',  icon: '⚡' , demo: null},
   { id: 6, title: 'Phase 6', subtitle: 'Global Scale',              desc: 'International deployment, enterprise solutions',              icon: '🚀' , demo: null},
