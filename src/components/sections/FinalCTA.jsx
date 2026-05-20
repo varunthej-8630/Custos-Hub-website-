@@ -197,49 +197,34 @@ export default function FinalCTA() {
 
         {/* Headlines */}
         <motion.h2
-          className="reveal"
+          className="reveal gradient-text"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.1 }}
           style={{
             fontFamily: 'Crimson Text, serif', fontWeight: 700,
-            fontSize: 'clamp(32px, 6vw, 64px)',
-            color: '#fff', marginBottom: 8, lineHeight: 1.05, letterSpacing: '3px',
+            fontSize: 'clamp(32px, 5.5vw, 60px)',
+            marginBottom: 24, lineHeight: 1.1, letterSpacing: '2px',
           }}
         >
-          Security should not just record crime.
+          Join the Custos Early Access Program
         </motion.h2>
 
-        <motion.h2
-          className="reveal gradient-text"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          style={{
-            fontFamily: 'Crimson Text, serif', fontWeight: 700,
-            fontSize: 'clamp(32px, 6vw, 64px)',
-            marginBottom: 32, lineHeight: 1.05, letterSpacing: '3px',
-          }}
-        >
-          It should prevent it.
-        </motion.h2>
-
-        {/* Typewriter subtext */}
+        {/* Subtext */}
         <motion.p
           className="reveal"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.4 }}
+          transition={{ delay: 0.3 }}
           style={{
-            fontFamily: 'DM Sans', fontSize: 'clamp(14px,1.4vw,17px)',
-            color: 'rgba(255,255,255,0.52)', maxWidth: 540,
-            margin: '0 auto 52px', lineHeight: 1.75,
+            fontFamily: 'DM Sans', fontSize: 'clamp(14px,1.3vw,17px)',
+            color: 'rgba(255,255,255,0.6)', maxWidth: 640,
+            margin: '0 auto 48px', lineHeight: 1.75,
           }}
         >
-          Custos is building the future of autonomous security intelligence — from homes to nations.
+          Custos is in active development. Request early access to be among the first to deploy the system — whether you're a homeowner, factory manager, school admin, or housing society.
         </motion.p>
 
         {/* Stats row */}
@@ -332,6 +317,14 @@ export default function FinalCTA() {
             Request Early Access
             <span style={{ fontSize: 16 }}>↗</span>
           </a>
+          <div style={{
+            fontFamily: 'DM Sans', fontSize: '13px',
+            color: '#00C8FF',
+            marginTop: '20px', letterSpacing: '0.5px',
+            opacity: 0.85
+          }}>
+            Currently piloting in Mysuru, Karnataka. Expanding across India in 2026.
+          </div>
         </motion.div>
 
         {/* Trust line */}

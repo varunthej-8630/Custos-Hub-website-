@@ -1,28 +1,10 @@
-const founderStory = `During my intermediate years, my friend's grandparents were robbed and stabbed by a thief inside their own home.
+const founderStory = `My name is Varun Thej. I'm a student from Mysuru building Custos alone — from idea to code to hardware.
 
-There were two CCTV cameras outside that house. Both were working. Both recorded that night. But no one was watching — and the system had no way to tell anyone what was happening.
+I started because I saw a gap: millions of families in India have CCTV cameras that do nothing except record. The smart alternatives cost more than most people earn in a month.
 
-They suffered through the entire night. Alone.
+Custos is my answer. Retrofit, not replace. Intelligence, not just recording. Offline-first, because not everyone has reliable internet. WhatsApp alerts, because that's how India communicates.
 
-It was only the next morning, when my friend's father came over and noticed they hadn't opened their doors, that anyone knew. The car was gone. They were found inside. Two cameras had seen everything — and said nothing.
-
-That stayed with me.
-
-I kept thinking — what if the camera had just sent one alert? One call? What if it had understood that something was wrong and told someone? They could have been found in time. That's not a big ask. That's the bare minimum a security system should do.
-
-I started looking into how many families face situations like this. The numbers shook me. And what I found wasn't just theft — it was elderly people falling at home with no one around, vehicles stolen while cameras stared blankly, families in rural areas with no coverage at all.
-
-Security means something different to every family. But the gap is always the same — the camera sees, and does nothing.
-
-Most people think it won't happen to them.
-
-I don't say that to scare anyone. I say it because I believed that too, until I saw what that belief costs. You don't know what the next minute holds. And if something does happen — the only thing worse than having no camera is having one that watched and stayed silent.
-
-I'm not building another CCTV camera. I'm building the retrofit hub that takes the camera you already have and gives it the ability to understand what it sees — and act on it. Custos is not a fixed product. It will mold to what your family needs.
-
-This is bigger than one product though. Every camera that becomes intelligent is one more pair of eyes that can actually help. With enough of them — across homes, streets, and cities — we can build something that truly changes how safe people are.
-
-The cameras were there that night. They just didn't know what to do with what they saw. That's what I'm here to fix.`
+This is Phase 1. The ecosystem is growing — module by module, sector by sector, from homes to nations.`
 
 const disciplines = ['Electronics & Communication', 'Edge AI', 'Embedded Systems', 'Computer Vision']
 const projects = [
@@ -48,11 +30,11 @@ export default function Founder() {
           <div className="reveal" style={{ marginBottom: '20px' }}>
             <div className="label-pill">THE FOUNDER</div>
           </div>
-          <h2 className="reveal" style={{
+          <h2 className="reveal gradient-text" style={{
             fontFamily: 'Crimson Text, serif', fontWeight: 700,
-            fontSize: 'clamp(32px, 4.5vw, 56px)', color: '#fff', letterSpacing: '3px', lineHeight: 1.15
+            fontSize: 'clamp(32px, 4.5vw, 56px)', marginBottom: '16px', letterSpacing: '2px', lineHeight: 1.15
           }}>
-            Why Custos Exists.
+            Built by One Person. For Everyone.
           </h2>
         </div>
 
@@ -95,7 +77,7 @@ export default function Founder() {
               </div>
 
               {/* Projects */}
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '24px' }}>
                 {projects.map((p, i) => (
                   <div key={i} className="glass-card" style={{
                     padding: '12px 16px',
@@ -110,6 +92,67 @@ export default function Founder() {
                   </div>
                 ))}
               </div>
+
+              {/* External Links Section */}
+              <div style={{
+                display: 'flex',
+                gap: '12px',
+                justifyContent: 'center',
+                borderTop: '1px solid rgba(255,255,255,0.08)',
+                paddingTop: '20px',
+                flexWrap: 'wrap'
+              }}>
+                <a
+                  href="https://github.com/varunthej"
+                  target="_blank" rel="noopener noreferrer"
+                  className="tech-badge"
+                  style={{
+                    textDecoration: 'none',
+                    color: '#00C8FF',
+                    borderColor: 'rgba(0, 200, 255, 0.25)',
+                    background: 'rgba(0, 200, 255, 0.05)',
+                    transition: 'all 0.2s ease',
+                    fontWeight: 600
+                  }}
+                  onMouseEnter={e => { e.currentTarget.style.background = 'rgba(0,200,255,0.15)' }}
+                  onMouseLeave={e => { e.currentTarget.style.background = 'rgba(0,200,255,0.05)' }}
+                >
+                  GitHub
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/parimi-varun-thej"
+                  target="_blank" rel="noopener noreferrer"
+                  className="tech-badge"
+                  style={{
+                    textDecoration: 'none',
+                    color: '#00C8FF',
+                    borderColor: 'rgba(0, 200, 255, 0.25)',
+                    background: 'rgba(0, 200, 255, 0.05)',
+                    transition: 'all 0.2s ease',
+                    fontWeight: 600
+                  }}
+                  onMouseEnter={e => { e.currentTarget.style.background = 'rgba(0,200,255,0.15)' }}
+                  onMouseLeave={e => { e.currentTarget.style.background = 'rgba(0,200,255,0.05)' }}
+                >
+                  LinkedIn
+                </a>
+                <a
+                  href="mailto:p.varunthej@gmail.com"
+                  className="tech-badge"
+                  style={{
+                    textDecoration: 'none',
+                    color: '#00C8FF',
+                    borderColor: 'rgba(0, 200, 255, 0.25)',
+                    background: 'rgba(0, 200, 255, 0.05)',
+                    transition: 'all 0.2s ease',
+                    fontWeight: 600
+                  }}
+                  onMouseEnter={e => { e.currentTarget.style.background = 'rgba(0,200,255,0.15)' }}
+                  onMouseLeave={e => { e.currentTarget.style.background = 'rgba(0,200,255,0.05)' }}
+                >
+                  Email
+                </a>
+              </div>
             </div>
           </div>
 
@@ -122,7 +165,7 @@ export default function Founder() {
               {founderStory.split('\n\n').map((para, i) => (
                 <p key={i} style={{
                   fontFamily: 'DM Sans', fontSize: '15px',
-                  color: 'rgba(255,255,255,0.8)',
+                  color: 'rgba(255,255,255,0.85)',
                   lineHeight: 1.9, marginBottom: '20px'
                 }}>
                   {para}
@@ -131,7 +174,7 @@ export default function Founder() {
               <p style={{
                 fontFamily: 'Syne, sans-serif', fontSize: '14px',
                 color: 'rgba(0,200,255,0.8)', fontWeight: 600,
-                marginTop: '16px'
+                marginTop: '24px'
               }}>
                 — Parimi Varun Thej, Founder, Custos
               </p>

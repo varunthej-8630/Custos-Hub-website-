@@ -150,12 +150,11 @@ function GridOverlay() {
 
 // ─── Phases data ──────────────────────────────────────────────
 const phases = [
-  { id: 1, title: 'Phase 1', subtitle: 'Prototype & Validation',   desc: 'Core AI hub, retrofit module, basic detection suite asset protection',         icon: '🔬' , demo: '/custos-workflow.pdf'},
-  { id: 2, title: 'Phase 2', subtitle: 'Residential Deployment',    desc: 'Elder care, analytics, advanced escalation modes',                         icon: '🏠' , demo: 'https://custos-eldercare.vercel.app/'},
-  { id: 3, title: 'Phase 3', subtitle: 'Platform Expansion',        desc: 'Homes, apartments, small businesses',            icon: '📈' , demo: null},
-  { id: 4, title: 'Phase 4', subtitle: 'Open Eye Network',          desc: 'City-scale distributed intelligence',                         icon: '🌐' , demo: null},
-  { id: 5, title: 'Phase 5', subtitle: 'Advanced Features',         desc: 'Multi-protocol communication, edge processing enhancements',  icon: '⚡' , demo: null},
-  { id: 6, title: 'Phase 6', subtitle: 'Global Scale',              desc: 'International deployment, enterprise solutions',              icon: '🚀' , demo: null},
+  { id: 0, title: 'Phase 0 — Legal Foundation', subtitle: 'Month 1–2', desc: 'Company registration (Custos AI Technologies Pvt Ltd) · DPIIT Startup India recognition · Provisional patent filing — Risk Intelligence Engine architecture', icon: '⚖️', demo: null },
+  { id: 1, title: 'Phase 1 — Strengthen Core', subtitle: 'Month 1–3 · Active Now', desc: 'Risk score explanation text ("Lingering near asset for 47 sec") · WhatsApp alert integration · Face recognition for Custos Home · Running on Raspberry Pi 4 (not just laptop)', icon: '🧠', demo: null },
+  { id: 2, title: 'Phase 2 — First Pilot Customer', subtitle: 'Month 3–5', desc: 'Custos Guard PPE module · Multi-camera support · One-command installation script · First real deployment in Mysuru', icon: '🏭', demo: null },
+  { id: 3, title: 'Phase 3 — Funding & Expansion', subtitle: 'Month 5–8', desc: 'Apply for SISFS, NASSCOM, AIC grants · Custos Desk and Custos Care modules · Complete patent specification', icon: '📈', demo: null },
+  { id: 4, title: 'Phase 4 — Raksha & Trace', subtitle: 'Month 8–14', desc: 'Custos Mesh network protocol · Custos Trace distributed face search · Custos Raksha ESP32 hardware prototype · Partnership with housing colonies and women\'s safety NGOs', icon: '🛡️', demo: null },
 ]
 
 // ─── Hero ─────────────────────────────────────────────────────
@@ -403,41 +402,73 @@ export default function Hero() {
           {/* "Custos" — big 3D text shadow effect */}
           <span className="hero-title-custos">Custos</span>
 
-          {/* ✅ "From Homes to Nations" — no nowrap, clamp scales down properly */}
-          <span className="hero-title-sub">
-            From Homes to Nations
+          {/* Headline updated to reflect thinks security tagline */}
+          <span className="hero-title-sub" style={{ fontSize: 'clamp(22px, 5.5vw, 48px)' }}>
+            From Homes to Nations — Security That Thinks
           </span>
         </motion.h1>
 
-        {/* Subheadline */}
+        {/* Subheadline updated */}
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.6 }}
           style={{
             fontFamily: 'DM Sans, sans-serif',
-            fontSize: 'clamp(14px, 2vw, 18px)',
+            fontSize: 'clamp(14px, 2vw, 17px)',
             fontWeight: 500,
-            color: 'rgba(255,255,255,0.82)',
-            maxWidth: 520,
-            lineHeight: 1.75,
-            marginBottom: 16,
+            color: 'rgba(255,255,255,0.85)',
+            maxWidth: 640,
+            lineHeight: 1.7,
+            marginBottom: 24,
             textShadow: '0 1px 20px rgba(0,0,0,0.8)',
           }}
         >
-          Connect. Upgrade. Transform any CCTV into an AI-powered security intelligence system.
+          Retrofit any CCTV or DVR into an AI-powered security system. Offline-first. No subscription. Works on hardware you already own.
         </motion.p>
 
-        {/* Secondary badge */}
+        {/* Section 1 Badge pills below subheadline */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
-          style={{ marginBottom: 36 }}
+          style={{
+            display: 'flex',
+            gap: '8px',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+            maxWidth: '720px',
+            marginBottom: '36px'
+          }}
         >
-          <div className="label-pill" style={{ fontSize: 11, color: 'rgba(255,255,255,0.6)' }}>
-            A security system that detects, understands, and responds
-          </div>
+          {[
+            '100% Offline Ready',
+            'Retrofit Any Camera',
+            'WhatsApp Alerts',
+            'Risk Score Engine',
+            'From ₹3,000'
+          ].map((badge, idx) => (
+            <span
+              key={idx}
+              className="label-pill"
+              style={{
+                fontSize: '10px',
+                padding: '6px 14px',
+                letterSpacing: '1.2px',
+                background: 'rgba(0, 200, 255, 0.05)',
+                borderColor: 'rgba(0, 200, 255, 0.2)',
+                color: '#fff',
+                fontWeight: 600,
+                textTransform: 'none',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px'
+              }}
+            >
+              {idx === 0 && <span className="pulse-dot" />}
+              {badge}
+            </span>
+          ))}
         </motion.div>
 
         {/* ✅ FIX 3: CTA Buttons — stack on mobile, gap tighter */}
